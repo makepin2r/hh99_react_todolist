@@ -24,16 +24,20 @@ const App = () => {
           text: val,
           isDone: false
         }
-        console.log(todo)
         setTodos(todos => todos.concat(todo)); // 불변성을 지키기 위해서 push 대신 concat 사용
         ++nextID;
       }
     }
 
+    // 투두 아이템 삭제 함수
+    const removeTodo = (id) => {
+      setTodos(todos => todos.filter(todo => todo.id !== id))
+    }
+
     return (
         <Template>
             <TodoInput insertTodo={insertTodo}/>
-            <TodoList todos={todos}/>
+            <TodoList todos={todos} removeTodo={removeTodo}/>
         </Template>
     );
 };
