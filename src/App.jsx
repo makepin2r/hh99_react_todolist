@@ -29,6 +29,18 @@ const App = () => {
       }
     }
 
+    // 투두 완료 토글 함수
+    const toggleTodo = (id) => {
+      setTodos(todos => todos.map(todo => {
+        if(todo.id === id) {
+          return {...todo, isDone: !(todo.isDone)}
+        }
+        else {
+          return todo
+        }
+      }))
+    }
+
     // 투두 아이템 삭제 함수
     const removeTodo = (id) => {
       setTodos(todos => todos.filter(todo => todo.id !== id))
@@ -37,7 +49,7 @@ const App = () => {
     return (
         <Template>
             <TodoInput insertTodo={insertTodo}/>
-            <TodoList todos={todos} removeTodo={removeTodo}/>
+            <TodoList todos={todos} removeTodo={removeTodo} toggleTodo={toggleTodo}/>
         </Template>
     );
 };

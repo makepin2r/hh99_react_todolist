@@ -7,7 +7,6 @@ const TodoInput = ({insertTodo}) => {
     }
     const submitTodo = (e) => {
         e.preventDefault(); // form 내 submit 버튼이므로 새로고침되기 때문에 이를 방지함
-        console.log(value)
         insertTodo(value); // 값 넣어주기
         setValue(""); // 인풋 초기화
     }
