@@ -1,0 +1,8 @@
+.todo-list {
+    min-height: 20vh;
+    margin-bottom: 3vh;
+}
+
+.todo-list > h2 {
+    margin-bottom: 1vh;
+}

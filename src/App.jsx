@@ -51,7 +51,8 @@ const App = () => {
     return (
         <Template>
             <TodoInput insertTodo={insertTodo} />
-            <TodoList todos={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} />
+            <TodoList todos={todos.filter((todo) => todo.isDone === false)} removeTodo={removeTodo} toggleTodo={toggleTodo} title={`WORKING`} />
+            <TodoList todos={todos.filter((todo) => todo.isDone === true)} removeTodo={removeTodo} toggleTodo={toggleTodo} title={`DONE`}/>
         </Template>
     );
 };

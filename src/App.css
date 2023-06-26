@@ -1,5 +1,59 @@
-.todo-item {
-  width: 300px;
-  min-height: 50px;
-  border: 1px solid lightcoral;
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+
+* {
+  font-family: 'Pretendard', Roboto;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+
+h1, h2, h3, p {
+  font-weight: 700;
+  margin: 0;
+}
+
+h1, h2 {
+  letter-spacing: -0.5px;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+.template {
+  width: 50vh;
+  min-height: 50vh;
+  margin: 5vh auto 0;
+  padding: 5vh;
+  border-radius: 3vh;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.template > h1 {
+  font-size: 40px;
+  background: linear-gradient(to right top, #3b7776, #7CCAD5);
+  color: transparent;
+  -webkit-background-clip: text; /* gradient text */
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  background-image: url("./logo.svg");
+  background-size: cover;
+  background-position: center center;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  transform-origin: 50% 50%;
+  margin: 0 -0.3vh;
 }

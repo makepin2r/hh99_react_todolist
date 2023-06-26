@@ -1,0 +1,32 @@
+.input-box {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    height: 3vh;
+    margin: 3vh 0;
+}
+
+.input-box > button {
+    width: 5vh;
+    height: 100%;
+    margin-left: auto;
+}
+
+.input-box > input {
+    height: 100%;
+    margin: 0 1.2vh 0 0.8vh;
+    border: 1px solid #dcdde1;
+    color: #353b48;
+    border-radius: 0.5vh;
+    width: 15vh;
+    padding: 0 0.5vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.input-box > input:focus {
+    outline: 0;
+    color: #1e1e1e;
+    border: 1px solid #abb2bb;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px;
+}
