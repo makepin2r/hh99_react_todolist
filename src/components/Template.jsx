@@ -1,5 +1,5 @@
 import React from 'react'
-import "../App.css";
+import "./Template.css";
 
 const Template = ({children}) => {
     return (
