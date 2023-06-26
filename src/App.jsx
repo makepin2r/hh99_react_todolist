@@ -18,7 +18,6 @@ const App = () => {
     // 인풋에서 값 받아오는 함수
     const insertTodo = (title, desc) => {
         if (title !== "" && desc !== "") {
-            console.log("insertTodo", title, desc);
             const todo = {
                 id: nextID,
                 title: title,

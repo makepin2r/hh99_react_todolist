@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import Button from "components/Button";
 import "./TodoInput.css";
-import "./Button.css";
 
 const TodoInput = ({ insertTodo }) => {
     const [title, setTitle] = useState("");
@@ -27,7 +27,7 @@ const TodoInput = ({ insertTodo }) => {
                 <input value={title} onChange={changeTitleHandler} placeholder="제목을 입력해주세요" />
                 <p>설명</p>
                 <input value={desc} onChange={changeDescHandler} placeholder="설명을 입력해주세요" />
-                <button className="btn" type="submit">Add</button>
+                <Button classType={""} text="Add" type="submit"/>
             </form>
         </div>
     );

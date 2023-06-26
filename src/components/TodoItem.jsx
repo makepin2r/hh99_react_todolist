@@ -1,9 +1,15 @@
 import React from "react";
 import "./TodoItem.css"
-import "./Button.css"
+import Button from "components/Button";
 
 const TodoItem = ({ todo, removeTodo, toggleTodo }) => {
     const { id, title, desc, isDone } = todo;
+    const deleteFunc = () => {
+        removeTodo(id);
+    }
+    const toggleFunc = () => {
+        toggleTodo(id);
+    }
     return (
         <div className={`todo-item`}>
             <div>
@@ -11,8 +17,8 @@ const TodoItem = ({ todo, removeTodo, toggleTodo }) => {
                 <p>{desc}</p>
             </div>
             <div>
-                <button className="btn" onClick={() => { removeTodo(id); }} > 삭제하기 </button>
-                <button className={`btn ${isDone ? "btn--cancel" : "btn--complete"}`} onClick={() => { toggleTodo(id); }} > {isDone ? "취소" : "완료"} </button>
+                <Button classType={""} onClickFunc={deleteFunc} text="삭제하기"/>
+                <Button classType={isDone ? "btn--cancel" : "btn--complete"} onClickFunc={toggleFunc} text={isDone ? "취소" : "완료"}/>
             </div>
         </div>
     );
