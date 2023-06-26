@@ -1,9 +1,11 @@
 # React로 Todolist 만들기
 
 본 프로젝트는 항해99 리액트 1주차의 투두리스트 만들기 과제입니다.
+[프로젝트 방문하기](https://hh99-react-todolist.vercel.app/)
 
 ## 프로젝트 개요
 ### 컴포넌트 구조
+```
 node_modules/
 public/
     assets/             : 이미지 파일 등 리소스 파일
@@ -22,3 +24,4 @@ src/                    : 코드 파일
     App.jsx
     App.css
     index.js
+```
