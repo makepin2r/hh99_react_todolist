@@ -20,7 +20,8 @@
     border: 1px solid #dcdde1;
     color: #353b48;
     border-radius: 0.5vh;
-    width: 15vh;
+    width: 35vh;
+    max-width: 800px;
     padding: 0 0.5vh;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
