@@ -3,6 +3,9 @@
 본 프로젝트는 항해99 리액트 1주차의 투두리스트 만들기 과제입니다.
 [프로젝트 방문하기](https://hh99-react-todolist.vercel.app/)
 
+
+![image](https://github.com/makepin2r/hh99_react_todolist/assets/39889583/affff13f-81f1-496c-aec0-f803f63d630a)
+
 ## 프로젝트 개요
 ### 컴포넌트 구조
 ```
